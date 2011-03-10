@@ -31,4 +31,8 @@ After that, the treenode will simply concat the result and return.
 
 If there was an error(or didn't respond within X sec), template should define how to resolve it.
 Such as just ignore it, display alternertive text(error box, place holder), or just refuse to render whole thing and redirect to err page.
-	
+
+Because node.js could do all these asynchronously and some HTML pages are getting so complex, it might make sense to do this on complex pages, instead of having a single webserver always generating fully rendered HTML. 
+
+
+Fun weekend project :)	
