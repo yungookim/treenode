@@ -22,10 +22,10 @@ Given a meta-template which structures a HTML page in tree structure, fetch cont
 
 Then,
 
-192.1.1.10/gethead produces `<head>blah</head>`
-192.2.1.10/getbody produces `<body>hello</body>`
-Memcached server at 192.5.5.0 returns value for key `footer_version_2.1`
-Reads from local file `/treenode/files/somefile`
+- 192.1.1.10/gethead produces `<head>blah</head>`
+- 192.2.1.10/getbody produces `<body>hello</body>`
+- Memcached server at 192.5.5.0 returns value for key `footer_version_2.1`
+- Reads from local file `/treenode/files/somefile`
 
 After that, the treenode will simply concat the result and return.
 
