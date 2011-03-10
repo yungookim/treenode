@@ -9,16 +9,16 @@ Given a meta-template which structures a HTML page in tree structure, fetch cont
 ## Example (rough sketch)
 
 	
-{ 'Document' :
- [
-  {'Head' : { 'type' : 'http', 'url' : '192.1.1.10/gethead', 'insertHeader' : 1, 'insertPost' : 0 }
-  {'Body' : { 'type' : 'http', 'url' : '192.2.1.10/getbody', 'insertHeader' : 0, 'insertPost' : 1 }
-  {'Footer' : { 'type' : 'memcached', 'server': '192.5.5.0', 'key' : 'footer_version_2.1' }
-  {'Footer2' : { 'type' : 'local', 'path' : '/treenode/files/somefile' }
- ],
- 'prepend' : '<html>',
- 'append' : '</html>'
-}
+	{ 'Document' :
+	 [
+	  {'Head' : { 'type' : 'http', 'url' : '192.1.1.10/gethead', 'insertHeader' : 1, 'insertPost' : 0 }
+	  {'Body' : { 'type' : 'http', 'url' : '192.2.1.10/getbody', 'insertHeader' : 0, 'insertPost' : 1 }
+	  {'Footer' : { 'type' : 'memcached', 'server': '192.5.5.0', 'key' : 'footer_version_2.1' }
+	  {'Footer2' : { 'type' : 'local', 'path' : '/treenode/files/somefile' }
+	 ],
+	 'prepend' : '<html>',
+	 'append' : '</html>'
+	}
 
 Then,
 
