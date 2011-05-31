@@ -4,8 +4,8 @@ var sys = require("sys"),
     url = require("url"),
     path = require("path"),
     fs = require("fs"),
-	qs = require("querystring"),
-	async = require("async");
+    qs = require("querystring"),
+    async = require("./async.js");
 
 // This server combines multiple files into one response
 http.createServer(function(request, response) {
